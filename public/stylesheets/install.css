@@ -1,0 +1,63 @@
+/* ====== install ======= */
+    
+#install {
+    margin-left:20px;
+    font-size:16px;
+    margin-bottom:30px;
+    margin-top:20px;
+}
+
+#install h1 {
+    margin-bottom:20px;
+}
+
+#install h2 {
+    font-size:16px;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+    #install h2 span {
+        display:block;
+        font-size:12px;
+        color:#777;
+        font-weight:normal;
+    }
+
+#install select {
+    font-size:14px;
+    margin:10px;
+}
+
+#install li {
+    margin:5px;
+}
+
+#install label {
+    display:inline-block;
+    width:200px;
+}
+
+#install .systemcheck label {
+    width:370px;
+}
+
+#install input {
+    font-size:20px;
+    color:#DF7800;
+    padding:2px;
+}
+
+#install li.error input,
+#install select.error {
+    border:1px solid #ff0000;
+}
+
+
+#install li.error span {
+    color:#ff0000;
+}
+
+#install li.success span {
+    color:#41AF0A;
+}

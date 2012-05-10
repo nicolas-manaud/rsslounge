@@ -1,0 +1,201 @@
+#
+# Install
+#
+
+config is not writeable|Verzeichnis config ist schreibgesch&uuml;tzt
+data/cache is not writeable|Verzeichnis data/cache ist schreibgesch&uuml;tzt
+data/favicons is not writeable|Verzeichnis data/favicons ist schreibgesch&uuml;tzt
+data/thumbnails is not writeable|Verzeichnis data/thumbnails ist schreibgesch&uuml;tzt
+data/logs is not writeable|Verzeichnis data/logs ist schreibgesch&uuml;tzt
+public/stylesheets is not writeable|Verzeichnis public/stylesheets ist schreibgesch&uuml;tzt
+public/javascript is not writeable|Verzeichnis public/javascript ist schreibgesch&uuml;tzt
+the Apache Module mod_rewrite is not enabled|das Apache Modul mod_rewrite ist nicht aktiviert
+you need at least php version 5.2.4|es ist mindestens php version 5.2.4 erforderlich
+rsslounge needs the '%s' extension|rsslounge ben&ouml;tigt die '%s' Erweiterung
+please select a valid language|bitte g&uuml;ltige Sprache w&auml;hlen
+please enter an host|bitte Host angeben
+please enter an username|bitte Benutzername angeben
+please enter a database|bitte Datenbank angeben
+given passwords not equal|angegebene Passw&ouml;rter sind nicht identisch
+if you set a password you must set an username|Wenn du ein Passwort setzt, muss auch ein Benutzername angegeben werden
+if you set a username you must set an password|Wenn du einen Benutzername setzt, muss auch ein Passwort angegeben werden
+database connection error (ensure that the database exists)|Datenbankverbindungsfehler (bitte stelle sicher, dass die Datenbank existiert)
+database error|Datenbankfehler
+database error (can't write dump into database)|Datenbankfehler (Dump kann nicht in die Datenbank geschrieben werden)
+Installation successfully. You can now use rsslounge.|Installation erfolgreich. Du kannst jetzt rsslounge benutzen.
+start rsslounge|starte rsslounge
+error|Fehler
+success|Erfolg
+2. Select a language|2. Sprache w&auml;hlen
+3. Enter database settings|3. Datenbankeinstellungen
+4. Login|4. Passwortschutz
+optional: leave the fields clear for no password protection|optional: die Felder einfach leer lassen f&uuml;r keinen Passwortschutz
+Public Access|&ouml;ffentlicher Zugriff
+install rsslounge|installiere rsslounge
+data/cache writeable|Verzeichnis data/cache beschreibbar
+data/favicons writeable|Verzeichnis data/favicons beschreibbar
+data/thumbnails writeable|Verzeichnis data/thumbnails beschreibbar
+data/logs writeable|Verzeichnis data/logs beschreibbar
+config writeable|Verzeichnis config beschreibbar
+public/stylesheets writeable|Verzeichnis public/stylesheets beschreibbar
+public/javascript writeable|Verzeichnis public/javascript beschreibbar
+Username|Benutzername
+Password|Passwort
+again Password|erneut Passwort
+Database|Datenbank
+
+
+#
+# Update
+#
+The current rsslounge database is out of date. Click the button below for updating it.|Die verwendete rsslounge Datenbank ist nicht mehr aktuell. Bitte den untenstehenden Button klicken, um die Datenbank zu aktualisieren.
+
+
+
+#
+# Main Window
+#
+
+Error: wrong username or password|Fehler: falscher Benutzername oder Passwort
+You have been logged out successfully|Du hast dich erfolgreich abgemeldet
+Priority|Priorit&auml;t
+main menue|Hauptmen&uuml;
+Settings|Einstellungen
+Categories|Kategorien
+Show all Feeds|Alle Feeds anzeigen
+Hide all Feeds|Alle Feeds ausblenden
+Logout|Abmelden
+Login|Anmelden
+login|anmelden
+show rsslounge in public mode|&ouml;ffentliche Version anzeigen
+mark all as read|alle als gelesen markieren
+unstarr all|alle Sterne entfernen
+date|Datum
+all|alle
+only unread|nur ungelesene
+only images|nur Bilder
+only messages|nur Nachrichten
+sort by rating|nach Rating
+images and messages|Bilder und Nachrichten
+add new feed|neues Feed
+starred items|Markierte Eintr&auml;ge
+all items|Alle Eintr&auml;ge
+all feeds|alle Feeds
+edit|bearbeiten
+search|suchen
+uncategorized|unkategorisiert
+an error occured|ein Fehler ist aufgetreten
+remove search|Suche entfernen
+Search for|Suche nach
+Errormessages|Fehlermeldungen
+About|Info
+This application doesn't support the Internet Explorer 6. Please install a newer Version, a Gecko or Webkit based or another modern Browser!|Diese Applikation unterst&uuml;tzt keinen Internet Explorer 6. Bitte installiere eine neue Version, einen auf Gecko oder Webkit basierenden oder einen anderen modernen Browser.
+unread items|ungelesene Eintr&auml;ge
+read items|gelesene Eintr&auml;ge
+feeds|Feeds
+first new|zuerst Neues
+first old|zuerst Altes
+priority ascending|Priorit&auml;t aufsteigend
+priority descending|Priorit&auml;t absteigend
+
+
+#
+# Validation
+#
+
+category doesn't exists|Die Kategorie existiert nicht
+feed doesn't exists|Das Feed existiert nicht
+Value is required and can't be empty|Der Wert darf nicht leer sein
+Only alphanummeric values allowed|Es sind nur alphanumerische Werte erlaubt
+Only digits allowed|Es sind nur Ziffern erlaubt
+source doesn't exists|Die Quelle existiert nicht
+invalid item id|Ung&uuml;ltige ID
+Value must be bigger than 0|Der Wert muss gr&ouml;sser als 0 sein
+feed already exists|Feed existiert bereits
+Please choose a value between 0 and 2000 days|Bitte w&auml;hle einen Wert zwischen 0 und 2000 Tagen
+Please choose a value between 0 and 200 items per page|Bitte w&auml;hle einen Wert zwischen 0 und 200 Eintr&auml;ge pro Seite
+
+
+#
+# Category edit
+#
+
+edit categories|Kategorien bearbeiten
+delete|l&ouml;schen
+add category|Kategorie hinzuf&uuml;gen
+
+
+#
+# Settings
+#
+
+settings|Einstellungen
+top|oben
+bottom|unten
+Position of Images|Position der Bilder
+Height of Imagebox|H&ouml;he der Bildbox
+Delete Entries older than|L&ouml;sche Eintr&auml;ge &auml;lter als
+Mark as read on click|Bei Klick als gelesen markieren
+1 row|1 Zeile
+2 rows|2 Zeilen
+3 rows|3 Zeilen
+days|Tage
+Only top or bottom allowed|Nur Oben oder Unten erlaubt
+Language is not available|Sprache ist nicht verf&uuml;gbar
+Language|Sprache
+de|Deutsch
+es|Spanisch
+cs|Tschechisch
+en|Englisch
+pt|Portugisisch
+fr|Franz&ouml;sisch
+Refresh RSS Feeds every|Aktualisiere RSS Feeds alle
+minutes|Minuten
+Items per Page|Eintr&auml;ge pro Seite
+Save open Categories|Speichere offene Kategorien
+First show unread Items|Zuerst ungelesene Eintr&auml;ge zeigen
+Allow public access|&Ouml;ffentlichen Zugriff erlauben
+Activate login|Login aktivieren
+Drag this link into your bookmarks bar. Everytime you want to subscribe an open feed, click on this bookmark.|Ziehe diesen Link in deine Lesezeichenleiste. Jedes mal wenn du ein ge&ouml;ffnetes Feed abonnieren willst, dann klicke auf dieses Bookmark!
+subscribe feed|Feed abonnieren
+Entries old than this value will be deleted. Enter 0 for never deleting items.|Eintr&auml;ge &auml;lter als dieser Wert werden gel&ouml;scht. Gib 0 ein, falls die Eintr&auml;ge nie gel&ouml;scht werden sollen.
+Open links in new window|Links in neuem Fenster &ouml;ffnen
+Anonymizer URL (e.g. http://anonym.to/?)|Anonymisierer (z.B. http://anonym.to/?)
+Show items opened|Eintr&auml;ge ge&ouml;ffnet anzeigen
+
+
+#
+# Add/Edit Feed
+#
+
+add feed|Feed hinzuf&uuml;gen
+edit feed|Feed bearbeiten
+Name|Name
+Source|Quelle
+Category|Kategorie
+Choose an Feedtype from the left menue|W&auml;hle einen Feed Typ aus dem linksstehenden Men&uuml;
+No feed with given ID found|Kein Feed mit der angegebenen ID gefunden
+
+Enter an internal name for this feed|Gib einen internen Namen f&uuml;r das Feed ein
+Enter the source of this feed|Gib eine Quelle f&uuml;r das Feed ein
+Enter a numeric priority|Gib eine numerische Priorit&auml;t ein
+Optional: enter the url of the favicon|Optional: gib eine URL f&uuml;r das Favicon ein
+Optional: enter a regular expression (preg_match), only entries which match this expression will be fetched|Optional: gib einen regul&auml;ren Ausdruck ein (preg_match), nur Eintr&auml;ge die diesem Ausdruck entsprechen werden gelesen
+
+#
+# List of items
+#
+
+No valid date given|kein g&uuml;ltiges Datum
+Only true or false allowed|nur wahr oder falsch erlaubt
+Only both, multimedia, message allowed|Nur beides, Bilder und Nachrichten erlaubt
+Only date or rating allowed|Nur Datum oder Bewertung erlaubt
+No items found|Keine Eintr&auml;ge gefunden
+more|mehr
+starr|vormerken
+no title|kein Titel
+
+#
+# opml error
+#
+opml file parse error|OPML Datei Fehler

@@ -1,0 +1,18 @@
+<div id="item_<?PHP echo $this->id ?>">
+    <a href="<?PHP echo $this->link ?>" class="images-imagelink">
+        <img src="<?PHP echo Zend_Registry::get('config')->thumbnails->url . $this->content ?>" alt="<?PHP echo $this->title ?>" title="<?PHP echo $this->title ?>" />
+    </a>
+    <?PHP if(Zend_Registry::get('session')->authenticated===true) : ?>
+    <a class="mark-image <?PHP echo $this->unread==1 ? 'active' : '' ?>"><span><?PHP echo $this->translate('mark as read') ?></span></a> 
+    <a class="starr-image <?PHP echo $this->starred==1 ? 'active' : '' ?>" title="<?PHP echo $this->translate('starr') ?>"><span><?PHP echo $this->translate('starr') ?></span></a> 
+    <?PHP endif; ?>
+    <a href="<?PHP echo $this->link ?>" title="<?PHP echo $this->title ?>" class="link">
+        <?PHP 
+            mb_internal_encoding("UTF-8");
+            if(strlen($this->title)>20)
+                $this->title = mb_substr($this->title,0,20) . "...";
+            echo $this->highlite($this->title,Zend_Registry::get('search'));
+        ?>
+    </a>
+    <a href="<?PHP echo $this->link ?>" class="images-feed"><?PHP echo $this->name ?></a>
+</div>

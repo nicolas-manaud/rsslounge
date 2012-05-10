@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/140/trunk/library/Zend/Http/UserAgent/Features
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/140/trunk/library/Zend/Http/UserAgent/Features/Exception.php
+END
+Adapter.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/140/trunk/library/Zend/Http/UserAgent/Features/Adapter.php
+END

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File
+END
+MimeType.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/MimeType.php
+END
+Sha1.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/Sha1.php
+END
+FilesSize.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/FilesSize.php
+END
+NotExists.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/NotExists.php
+END
+IsCompressed.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/IsCompressed.php
+END
+ExcludeMimeType.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/ExcludeMimeType.php
+END
+Size.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/Size.php
+END
+Extension.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/Extension.php
+END
+Crc32.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/Crc32.php
+END
+ImageSize.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/ImageSize.php
+END
+IsImage.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/IsImage.php
+END
+Exists.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/Exists.php
+END
+Hash.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/Hash.php
+END
+WordCount.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/WordCount.php
+END
+Upload.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/Upload.php
+END
+Md5.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/Md5.php
+END
+ExcludeExtension.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/ExcludeExtension.php
+END
+Count.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/140/trunk/library/Zend/Validate/File/Count.php
+END

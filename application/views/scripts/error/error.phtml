@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>rsslounge aggregator</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="language" content="<?PHP echo Zend_Registry::get('session')->language; ?>" />
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" media="screen, handheld, projection, tv" href="stylesheets/style.css" />
+
+</head>
+<body>
+<!-- header -->
+    <div id="header">
+        <h1><span>rssLounge aggregator</span></h1>
+    </div>
+    
+    <!-- main area -->
+    <div id="error">
+
+        <h1>An error occurred</h1> 
+        <h2><?PHP echo $this->message ?></h2> 
+        
+        <h3>Exception information:</h3> 
+        <p> 
+        <b>Message:</b> <?PHP echo $this->exception->getMessage(); ?> 
+        </p> 
+
+        <?PHP if ('development' == APPLICATION_ENV): ?> 
+            <h3>Stack trace:</h3> 
+            <pre><?PHP echo $this->exception->getTraceAsString(); ?> 
+            </pre> 
+
+            <h3>Request Parameters:</h3> 
+            <pre><?PHP var_dump($this->request->getParams()); ?> 
+            </pre> 
+        <?PHP endif; ?>
+
+    </div>
+
+</body>
+</html>

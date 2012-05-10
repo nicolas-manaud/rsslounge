@@ -1,0 +1,9 @@
+<?PHP if($this->offset==0) : ?>
+<h1 class="errormessages"><?PHP echo $this->translate('Errormessages'); ?></h1>
+<ul id="errormessages">
+<?PHP endif; ?>
+<?PHP echo $this->partialLoop('errormessages/message.'.Zend_Controller_Action_HelperBroker::getStaticHelper('viewRenderer')->getViewSuffix(), $this->messages) ?>
+<?PHP if($this->offset==0) : ?>
+<li><a><?PHP echo $this->translate('more'); ?></a></li>
+</ul>
+<?PHP endif; ?>

@@ -1,0 +1,20 @@
+#
+# language file for images plugin
+#
+
+plugins_images_deviantart|deviantArt Benutzer
+This feed fetches the gallery of a deviantart user|Este feed mostra a galeria de um usuário do deviantART
+Username|Nome do Usuário
+Images|Imagens
+
+plugins_images_deviantartfavs|Favoritos deviantArt
+This feed fetches the favorites of a deviantart user|Este feed mostra os favoritos de um usuário do deviantART
+
+plugins_images_tumblr|Tumblr
+This feed fetches the gallery of a tumblr user|Este feed mostra a galeria de um usuário do tumblr
+
+plugins_images_visualizeus|vi.sualize.us
+This feed fetches the popular gallery of vi.sualize.us|Este feed mostra a galeria popular do vi.sualize.us
+
+plugins_images_deviantartdaily|deviantArt daily deviations
+This feed fetches the daily deviations from deviantart|Este feed mostra os deviations diários do deviantArt

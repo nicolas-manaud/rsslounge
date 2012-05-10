@@ -1,0 +1,16 @@
+<li>
+    <ul>
+        <li>
+        <?PHP 
+            $date = new Zend_Date($this->datetime);
+            echo $date->toString('d.MM.YYYY HH:mm');
+        ?>
+        </li>
+        <li class="feed">
+        <?PHP echo $this->feed ?>
+        &nbsp;</li>
+        <li class="message">
+        <?PHP echo $this->message; ?>
+        </li>
+    </ul>
+</li>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/158/trunk/updates
+END
+database-dist.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/140/trunk/updates/database-dist.sql
+END
+config-dist.ini
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/158/trunk/updates/config-dist.ini
+END
+database-demo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/140/trunk/updates/database-demo.sql
+END
+update_#.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/16/trunk/updates/update_%23.php
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/29/trunk/updates/.htaccess
+END
+install.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/158/trunk/updates/install.php
+END

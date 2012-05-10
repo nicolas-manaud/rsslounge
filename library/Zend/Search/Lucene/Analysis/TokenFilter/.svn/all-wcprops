@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/140/trunk/library/Zend/Search/Lucene/Analysis/TokenFilter
+END
+LowerCaseUtf8.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/140/trunk/library/Zend/Search/Lucene/Analysis/TokenFilter/LowerCaseUtf8.php
+END
+ShortWords.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/140/trunk/library/Zend/Search/Lucene/Analysis/TokenFilter/ShortWords.php
+END
+StopWords.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/140/trunk/library/Zend/Search/Lucene/Analysis/TokenFilter/StopWords.php
+END
+LowerCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/140/trunk/library/Zend/Search/Lucene/Analysis/TokenFilter/LowerCase.php
+END

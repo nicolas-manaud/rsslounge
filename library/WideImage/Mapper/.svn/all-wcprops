@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/146/trunk/library/WideImage/Mapper
+END
+GD.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/146/trunk/library/WideImage/Mapper/GD.php
+END
+GD2.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/146/trunk/library/WideImage/Mapper/GD2.php
+END
+BMP.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/146/trunk/library/WideImage/Mapper/BMP.php
+END
+PNG.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/146/trunk/library/WideImage/Mapper/PNG.php
+END
+GIF.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/146/trunk/library/WideImage/Mapper/GIF.php
+END
+JPEG.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/146/trunk/library/WideImage/Mapper/JPEG.php
+END

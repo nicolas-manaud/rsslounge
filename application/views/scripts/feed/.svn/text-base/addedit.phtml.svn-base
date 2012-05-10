@@ -1,0 +1,56 @@
+<div id="add">
+    <h1 class="feed-add"><?PHP echo $this->edit ? $this->translate('edit feed') : $this->translate('add feed'); ?></h1>
+    <div id="feed-source">
+        <?PHP foreach($this->sources as $cat => $sources) : ?>
+        <h3><?PHP echo $this->translate($cat); ?></h3>
+        <ul>
+            <?PHP foreach($sources as $name => $obj) : ?>
+            <li id="<?PHP echo $name ?>" title="<?PHP echo $this->translate($obj->description) ?>">
+                <img src="<?PHP echo $obj->icon ?>"/> <?PHP echo $this->translate($name) ?>
+                <span><?PHP if($obj->source!==false) echo $this->translate($obj->source) ?></span>
+            </li>
+            <?PHP endforeach; ?>
+        </ul>
+        <?PHP endforeach; ?>
+    </div>
+    
+    <ul id="feed-data">
+        <li class="description"><?PHP echo $this->translate('Choose an Feedtype from the left menue') ?></li>
+        <li>
+            <label><?PHP echo $this->translate('Name') ?></label> 
+            <input type="text" id="name" value="<?PHP if(isset($this->feed)) echo $this->feed->name ?>" title="<?PHP echo $this->translate('Enter an internal name for this feed'); ?>" />
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Source') ?></label> 
+            <input type="text" id="url" value="<?PHP if(isset($this->feed)) echo $this->feed->url; else echo $this->newfeed; ?>" title="<?PHP echo $this->translate('Enter the source of this feed'); ?>" />
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Category') ?></label> 
+            <?PHP echo $this->formSelect(
+                            'category', 
+                            isset($this->feed) ? $this->feed->category : -1,
+                            null,
+                            $this->categories
+                        ); ?>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Priority') ?></label> 
+            <span class="prio-add"></span> 
+            <input type="text" id="priority" value="<?PHP echo isset($this->feed) ? $this->feed->priority : 1 ?>" title="<?PHP echo $this->translate('Enter a numeric priority'); ?>" /> 
+            <span class="prio-sub"></span>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Favicon') ?></label> 
+            <input type="text" id="favicon" value="<?PHP if(isset($this->feed)) echo $this->feed->favicon ?>" title="<?PHP echo $this->translate('Optional: enter the url of the favicon'); ?>" />
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Filter') ?></label> 
+            <input type="text" id="filter" value="<?PHP if(isset($this->feed)) echo $this->feed->filter ?>" title="<?PHP echo $this->translate('Optional: enter a regular expression (preg_match), only entries which match this expression will be fetched'); ?>" />
+        </li>
+        <li>
+            <input type="hidden" id="source" value="<?PHP if(isset($this->feed)) echo $this->feed->source; else echo "plugins_rss_feed"; ?>" />
+            <input type="hidden" id="id" value="<?PHP if(isset($this->feed)) echo $this->feed->id; ?>" />
+        </li>
+    </ul>
+    
+</div>

@@ -1,0 +1,7 @@
+#
+# language file for news plugin
+#
+
+News|Notícias
+plugins_news_heise|heise
+This feed fetches the heise news with full content (not only the header as content)|Esse feed as notícias do heise com o conteúdo completo (Não apenas o cabeçalho do conteúdo)

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/140/trunk/library/Zend/XmlRpc/Client
+END
+IntrospectException.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/140/trunk/library/Zend/XmlRpc/Client/IntrospectException.php
+END
+FaultException.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/140/trunk/library/Zend/XmlRpc/Client/FaultException.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/140/trunk/library/Zend/XmlRpc/Client/Exception.php
+END
+HttpException.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/140/trunk/library/Zend/XmlRpc/Client/HttpException.php
+END
+ServerIntrospection.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/140/trunk/library/Zend/XmlRpc/Client/ServerIntrospection.php
+END
+ServerProxy.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/140/trunk/library/Zend/XmlRpc/Client/ServerProxy.php
+END

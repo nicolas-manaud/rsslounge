@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/140/trunk/library/Zend/Search/Lucene/Search/Query/Preprocessing
+END
+Phrase.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/140/trunk/library/Zend/Search/Lucene/Search/Query/Preprocessing/Phrase.php
+END
+Term.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/140/trunk/library/Zend/Search/Lucene/Search/Query/Preprocessing/Term.php
+END
+Fuzzy.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/140/trunk/library/Zend/Search/Lucene/Search/Query/Preprocessing/Fuzzy.php
+END

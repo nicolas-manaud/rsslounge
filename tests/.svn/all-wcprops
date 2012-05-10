@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/140/trunk/tests
+END
+bootstrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/109/trunk/tests/bootstrap.php
+END
+phpunit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/31/trunk/tests/phpunit.xml
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/29/trunk/tests/.htaccess
+END

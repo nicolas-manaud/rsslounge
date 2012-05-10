@@ -1,0 +1,390 @@
+﻿#
+# Install
+#
+
+config is not writeable|Do složky config nelze zapisovat
+data/cache is not writeable|Do složky data/cache nelze zapisovat
+data/favicons is not writeable|Do složky data/favicons nelze zapisovat
+data/thumbnails is not writeable|Do složky data/thumbnail nelze zapisovat
+data/logs is not writeable|Do složky data/logs nelze zapisovat
+the Apache Module mod_rewrite is not enabled|Modul Apache, mod_rewrite není povolen
+you need at least php version 5.2.4|potrebujete alespon php verze 5.2.4
+rsslounge needs the '%s' extension|rsslounge vyžaduje pro svuj beh rozšírení '%s'
+please select a valid language|Vyberte, prosím, platný jazyk
+please enter an host|Vyplnte, prosím, adresu databáze
+please enter an username|Vyplnte, prosím, uživatelské jméno
+please enter a database|Vyplnte, prosím, jméno databáze
+given passwords not equal|Zadaná hesla nesouhlasí.
+if you set a password you must set an username|Pokud nastavíte heslo, musíte též nastavit uživatelské jméno
+if you set a username you must set an password|Pokud nastavíte uživatelské jmméno, musíte též nastavit heslo
+database connection error (ensure that the database exists)|Chyba pri pripojení k databázi (ujistete se, že databáze opravdu existuje)
+database error|Chyba databáze
+database error (can't write dump into database)|Chyba databáze (nelze vložit nové tabulky)
+Installation successfully. You can now use rsslounge.|Instalace byla úspešná. Nyní mužete rsslounge používat.
+start rsslounge|Prejít k rsslounge
+error|Chyba
+success|Úspech
+2. Select a language|2. Vyberte jazyk
+3. Enter database settings|3. Nastavte údaje pro databázi
+4. Login|4. Prihlášení
+optional: leave the fields clear for no password protection|volitelné: ponechte pole hesel prázdné pro nastavení prázdného
+Public Access|Verejný prístup
+install rsslounge|Instalace rsslounge
+data/cache writeable|Do složky data/cache lze zapisovat
+data/favicons writeable|Do složky data/favicons lze zapisovat
+data/thumbnails writeable|Do složky data/thumbnails lze zapisovat
+data/logs writeable|Do složky data/logs lze zapisovat
+config writeable|Do složky config lze zapisovat
+Username|Uživatelské jméno
+Password|Heslo
+again Password|Heslo znovu
+Database|Databáze
+
+
+#
+# Update
+#
+The current rsslounge database is out of date. Click the button below for updating it.|Soucasná databáze rsslounge již není aktuální. Kliknete na tlacítko níže k její aktualizaci.
+
+
+
+#
+# Main Window
+#
+
+Error: wrong username or password|Chyba: špatné uživatelské jméno nebo heslo
+You have been logged out successfully|Odhlášení bylo úspešné
+Priority|Priorita
+main menue|Hlavní menu
+Settings|Nastavení
+Categories|Kategorie
+Show all Feeds|Zobrazit všechny kanály
+Hide all Feeds|Schovat všechny kanály
+Logout|Odhlásit
+Login|Prihlásit
+login|prihlásit
+show rsslounge in public mode|zobrazovat rsslounge ve verejném režimu
+mark all as read|oznacit vše jako prectené
+unstarr all|odoznacit vše
+date|Datum
+all|vše
+only unread|pouze neprectené
+only images|pouze obrázky
+only messages|pouze zprávy
+sort by rating|seradit podle hodnocení
+images and messages|obrázky a zprávy
+add new feed|pridat nový kanál
+starred items|Oznacené položky
+all items|Všechny položky
+all feeds|Všechny kanály
+edit|upravit
+search|hledat
+uncategorized|nezarazené
+an error occured|nastala chyba
+remove search|odstranit hledání
+Search for|Hledat
+Errormessages|Chybové zprávy
+About|Info
+This application doesn't support the Internet Explorer 6. Please install a newer Version, a Gecko or Webkit based or another modern Browser!|Tato aplikace nepodporuje Internet Explorer 6. Nainstalujte, prosím, novejší verzi, nebo jiný moderný prohlížec!
+unread items|neprectené položky
+read items|prectené položky
+feeds|kanály
+first new|nejprve nové
+first old|nejprve staré
+priority ascending|Rostoucí priorita
+priority descending|Klesající priorita
+
+
+#
+# Validation
+#
+
+category doesn't exists|kategorie neexistuje
+feed doesn't exists|kanál neexistuje
+Value is required and can't be empty|Hodnota je vyžadována a nemuže být prázdná
+Only alphanummeric values allowed|Pouze alfanumerické hodnoty jsou povoleny
+Only digits allowed|Pouze císlice jsou povoleny
+source doesn't exists|zdroj neexistuje
+invalid item id|neplatný identifikátor položky
+Value must be bigger than 0|Hodnota musí být vetší než 0
+feed already exists|kanál již existuje
+Please choose a value between 0 and 2000 days|Vyberte, prosím, hodnotu mezi 0 a 2000 dny
+Please choose a value between 0 and 200 items per page|Vyberte, prosím, hodnotu mezi 0 a 200 položkami na stránku
+
+
+#
+# Category edit
+#
+
+edit categories|úprava kategorií
+delete|smazat
+add category|pridat kategorii
+
+
+#
+# Settings
+#
+
+settings|nastavení
+top|nahore
+bottom|dole
+Position of Images|Umístení obrázku
+Height of Imagebox|Výška oblasti s obrázkem
+Delete Entries older than|Smazat položky starší než
+Mark as read on click|Oznacit za prectené pri kliknutí
+1 row|1 rada
+2 rows|2 rady
+3 rows|3 rady
+days|dní
+Only top or bottom allowed|Pouze nahore nebo dole je povoleno.
+Language is not available|Jazyk není dotupný
+Language|Jazyk
+de|Nemecky
+en|Anglicky
+pt|Portugalsky
+fr|Francouzsky
+Refresh RSS Feeds every|Aktualizovat RSS kanály každých
+minutes|minut
+Items per Page|Položek na stránku
+Save open Categories|Uložit otevrené kategorie
+First show unread Items|Zobrazit nejprve neprectené položky
+Allow public access|Povolit verejný prístup
+Activate login|Povolit prihlášení
+Drag this link into your bookmarks bar. Everytime you want to subscribe an open feed, click on this bookmark.|Pretáhnete tento odkaz do vaší lišty záložek. Když budete chtít odebírat kanál kliknete na vaši záložku.
+subscribe feed|odebírat kanál
+Entries old than this value will be deleted. Enter 0 for never deleting items.|Položky starší než tato hodnota budou smazány. Pokud nechcete položky mazat, zadejte 0.
+Open links in new window|Otevírat odkazy v novém okne
+Anonymizer URL (e.g. http://anonym.to/?)|Adresa anonymizacní stránky (napr.: http://anonym.to/?)
+Show items opened|Zobrazit otevrené položky
+
+
+#
+# Add/Edit Feed
+#
+
+add feed|pridat kanál
+edit feed|upravit kanál
+Name|Jméno
+Source|Zdroj
+Category|Kategorie
+Choose an Feedtype from the left menue|Vyberte typ kanálu z levého menu
+No feed with given ID found|Kanál s udaným identifikátorem nebyl nalezen
+
+Enter an internal name for this feed|Zadejte vnitrní jméno tohoto kanálu
+Enter the source of this feed|Zadejte zdroj tohoto kanálu
+Enter a numeric priority|Zadejte prioritu numericky
+Optional: enter the url of the favicon|Volitelné: zadejte adresu ikonky
+Optional: enter a regular expression (preg_match), only entries which match this expression will be fetched|Volitelné: zadejte regulární výraz (preg_match), pouze položky odpovídající tomuto výrazu budou stáhnuty.
+
+#
+# List of items
+#
+
+No valid date given|Nebylo poskytnuto platné datum
+Only true or false allowed|Povoleno pouze pravda, nebo nepravda
+Only both, multimedia, message allowed|Povoleno pouze obojí, multimedia a zpráva
+Only date or rating allowed|Povoleno pouze datum, nebo hodnocení
+No items found|Nebyly nalezeny žádné položky
+more|více
+starr|oznacit
+no title|bezejmenný
+
+#
+# opml error
+#
+opml file parse error|Chyba pri parsování OPML souboru
+#
+# Install
+#
+
+config is not writeable|Do složky config nelze zapisovat
+data/cache is not writeable|Do složky data/cache nelze zapisovat
+data/favicons is not writeable|Do složky data/favicons nelze zapisovat
+data/thumbnails is not writeable|Do složky data/thumbnail nelze zapisovat
+data/logs is not writeable|Do složky data/logs nelze zapisovat
+the Apache Module mod_rewrite is not enabled|Modul Apache, mod_rewrite není povolen
+you need at least php version 5.2.4|potrebujete alespon php verze 5.2.4
+rsslounge needs the '%s' extension|rsslounge vyžaduje pro svuj beh rozšírení '%s'
+please select a valid language|Vyberte, prosím, platný jazyk
+please enter an host|Vyplnte, prosím, adresu databáze
+please enter an username|Vyplnte, prosím, uživatelské jméno
+please enter a database|Vyplnte, prosím, jméno databáze
+given passwords not equal|Zadaná hesla nesouhlasí.
+if you set a password you must set an username|Pokud nastavíte heslo, musíte též nastavit uživatelské jméno
+if you set a username you must set an password|Pokud nastavíte uživatelské jmméno, musíte též nastavit heslo
+database connection error (ensure that the database exists)|Chyba pri pripojení k databázi (ujistete se, že databáze opravdu existuje)
+database error|Chyba databáze
+database error (can't write dump into database)|Chyba databáze (nelze vložit nové tabulky)
+Installation successfully. You can now use rsslounge.|Instalace byla úspešná. Nyní mužete rsslounge používat.
+start rsslounge|Prejít k rsslounge
+error|Chyba
+success|Úspech
+2. Select a language|2. Vyberte jazyk
+3. Enter database settings|3. Nastavte údaje pro databázi
+4. Login|4. Prihlášení
+optional: leave the fields clear for no password protection|volitelné: ponechte pole hesel prázdné pro nastavení prázdného
+Public Access|Verejný prístup
+install rsslounge|Instalace rsslounge
+data/cache writeable|Do složky data/cache lze zapisovat
+data/favicons writeable|Do složky data/favicons lze zapisovat
+data/thumbnails writeable|Do složky data/thumbnails lze zapisovat
+data/logs writeable|Do složky data/logs lze zapisovat
+config writeable|Do složky config lze zapisovat
+Username|Uživatelské jméno
+Password|Heslo
+again Password|Heslo znovu
+Database|Databáze
+
+
+#
+# Update
+#
+The current rsslounge database is out of date. Click the button below for updating it.|Soucasná databáze rsslounge již není aktuální. Kliknete na tlacítko níže k její aktualizaci.
+
+
+
+#
+# Main Window
+#
+
+Error: wrong username or password|Chyba: špatné uživatelské jméno nebo heslo
+You have been logged out successfully|Odhlášení bylo úspešné
+Priority|Priorita
+main menue|Hlavní menu
+Settings|Nastavení
+Categories|Kategorie
+Show all Feeds|Zobrazit všechny kanály
+Hide all Feeds|Schovat všechny kanály
+Logout|Odhlásit
+Login|Prihlásit
+login|prihlásit
+show rsslounge in public mode|zobrazovat rsslounge ve verejném režimu
+mark all as read|oznacit vše jako prectené
+unstarr all|odoznacit vše
+date|Datum
+all|vše
+only unread|pouze neprectené
+only images|pouze obrázky
+only messages|pouze zprávy
+sort by rating|seradit podle hodnocení
+images and messages|obrázky a zprávy
+add new feed|pridat nový kanál
+starred items|Oznacené položky
+all items|Všechny položky
+all feeds|Všechny kanály
+edit|upravit
+search|hledat
+uncategorized|nezarazené
+an error occured|nastala chyba
+remove search|odstranit hledání
+Search for|Hledat
+Errormessages|Chybové zprávy
+About|Info
+This application doesn't support the Internet Explorer 6. Please install a newer Version, a Gecko or Webkit based or another modern Browser!|Tato aplikace nepodporuje Internet Explorer 6. Nainstalujte, prosím, novejší verzi, nebo jiný moderný prohlížec!
+unread items|neprectené položky
+read items|prectené položky
+feeds|kanály
+first new|nejprve nové
+first old|nejprve staré
+priority ascending|Rostoucí priorita
+priority descending|Klesající priorita
+
+
+#
+# Validation
+#
+
+category doesn't exists|kategorie neexistuje
+feed doesn't exists|kanál neexistuje
+Value is required and can't be empty|Hodnota je vyžadována a nemuže být prázdná
+Only alphanummeric values allowed|Pouze alfanumerické hodnoty jsou povoleny
+Only digits allowed|Pouze císlice jsou povoleny
+source doesn't exists|zdroj neexistuje
+invalid item id|neplatný identifikátor položky
+Value must be bigger than 0|Hodnota musí být vetší než 0
+feed already exists|kanál již existuje
+Please choose a value between 0 and 2000 days|Vyberte, prosím, hodnotu mezi 0 a 2000 dny
+Please choose a value between 0 and 200 items per page|Vyberte, prosím, hodnotu mezi 0 a 200 položkami na stránku
+
+
+#
+# Category edit
+#
+
+edit categories|úprava kategorií
+delete|smazat
+add category|pridat kategorii
+
+
+#
+# Settings
+#
+
+settings|nastavení
+top|nahore
+bottom|dole
+Position of Images|Umístení obrázku
+Height of Imagebox|Výška oblasti s obrázkem
+Delete Entries older than|Smazat položky starší než
+Mark as read on click|Oznacit za prectené pri kliknutí
+1 row|1 rada
+2 rows|2 rady
+3 rows|3 rady
+days|dní
+Only top or bottom allowed|Pouze nahore nebo dole je povoleno.
+Language is not available|Jazyk není dotupný
+Language|Jazyk
+de|Nemecky
+en|Anglicky
+pt|Portugalsky
+fr|Francouzsky
+Refresh RSS Feeds every|Aktualizovat RSS kanály každých
+minutes|minut
+Items per Page|Položek na stránku
+Save open Categories|Uložit otevrené kategorie
+First show unread Items|Zobrazit nejprve neprectené položky
+Allow public access|Povolit verejný prístup
+Activate login|Povolit prihlášení
+Drag this link into your bookmarks bar. Everytime you want to subscribe an open feed, click on this bookmark.|Pretáhnete tento odkaz do vaší lišty záložek. Když budete chtít odebírat kanál kliknete na vaši záložku.
+subscribe feed|odebírat kanál
+Entries old than this value will be deleted. Enter 0 for never deleting items.|Položky starší než tato hodnota budou smazány. Pokud nechcete položky mazat, zadejte 0.
+Open links in new window|Otevírat odkazy v novém okne
+Anonymizer URL (e.g. http://anonym.to/?)|Adresa anonymizacní stránky (napr.: http://anonym.to/?)
+Show items opened|Zobrazit otevrené položky
+
+
+#
+# Add/Edit Feed
+#
+
+add feed|pridat kanál
+edit feed|upravit kanál
+Name|Jméno
+Source|Zdroj
+Category|Kategorie
+Choose an Feedtype from the left menue|Vyberte typ kanálu z levého menu
+No feed with given ID found|Kanál s udaným identifikátorem nebyl nalezen
+
+Enter an internal name for this feed|Zadejte vnitrní jméno tohoto kanálu
+Enter the source of this feed|Zadejte zdroj tohoto kanálu
+Enter a numeric priority|Zadejte prioritu numericky
+Optional: enter the url of the favicon|Volitelné: zadejte adresu ikonky
+Optional: enter a regular expression (preg_match), only entries which match this expression will be fetched|Volitelné: zadejte regulární výraz (preg_match), pouze položky odpovídající tomuto výrazu budou stáhnuty.
+
+#
+# List of items
+#
+
+No valid date given|Nebylo poskytnuto platné datum
+Only true or false allowed|Povoleno pouze pravda, nebo nepravda
+Only both, multimedia, message allowed|Povoleno pouze obojí, multimedia a zpráva
+Only date or rating allowed|Povoleno pouze datum, nebo hodnocení
+No items found|Nebyly nalezeny žádné položky
+more|více
+starr|oznacit
+no title|bezejmenný
+
+#
+# opml error
+#
+opml file parse error|Chyba pri parsování OPML souboru

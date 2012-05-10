@@ -1,0 +1,88 @@
+ <div id="settings">
+    <h1 class="settings"><?PHP echo $this->translate('settings'); ?></h1>
+    <ul id="settings-nav">
+        <li class="settings-nav-down"></li>
+        <li class="settings-nav-up"></li>
+    </ul>
+    <ul id="settings-data">
+        <li>
+            <label><?PHP echo $this->translate('Delete Entries older than'); ?></label> 
+            <input type="text" value="<?PHP echo Zend_Registry::get('session')->deleteItems ?>" id="deleteItems" title="<?PHP echo $this->translate('Entries old than this value will be deleted. Enter 0 for never deleting items.'); ?>" /> <?PHP echo $this->translate('days'); ?>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Position of Images'); ?></label>
+            <?PHP echo $this->formSelect(
+                            'imagesPosition', 
+                            Zend_Registry::get('session')->imagesPosition, 
+                            null,
+                            array(
+                                'top'    => $this->translate('top'),
+                                'bottom' => $this->translate('bottom')
+                            )
+                        ); ?>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Language'); ?></label>
+            <?PHP 
+                    echo $this->formSelect(
+                            'language', 
+                            Zend_Registry::get('session')->language,
+                            null,
+                            $this->languages
+                        ); ?>
+            </select>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Refresh RSS Feeds every'); ?></label> 
+            <input type="text" value="<?PHP echo Zend_Registry::get('session')->refresh ?>" id="refresh" /> <?PHP echo $this->translate('minutes'); ?>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Items per Page'); ?></label> 
+            <input type="text" value="<?PHP echo Zend_Registry::get('session')->itemsperpage ?>" id="itemsperpage" />
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Save open Categories'); ?></label> 
+            <input type="checkbox" value='1' id="saveOpenCategories" <?PHP echo Zend_Registry::get('session')->saveOpenCategories==1 ? 'checked="checked"' : '' ?>/>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('First show unread Items'); ?></label> 
+            <input type="checkbox" value='1' id="firstUnread" <?PHP echo Zend_Registry::get('session')->firstUnread==1 ? 'checked="checked"' : '' ?>/>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Open links in new window'); ?></label> 
+            <input type="checkbox" value='1' id="newWindow" <?PHP echo Zend_Registry::get('session')->newWindow==1 ? 'checked="checked"' : '' ?>/>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Anonymizer URL (e.g. http://anonym.to/?)'); ?></label> 
+            <input type="text" value="<?PHP echo Zend_Registry::get('session')->anonymizer ?>" id="anonymizer" />
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Show items opened'); ?></label> 
+            <input type="checkbox" value='1' id="openitems" <?PHP echo Zend_Registry::get('session')->openitems==1 ? 'checked="checked"' : '' ?>/>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Activate login'); ?></label> 
+            <input type="checkbox" value="1" id="activate_login" <?PHP echo strlen($this->username)>0 ? 'checked="checked"' : '' ?>/>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Allow public access'); ?></label> 
+            <input type="checkbox" value='1' id="public" <?PHP echo Zend_Registry::get('session')->public==1 ? 'checked="checked"' : '' ?>/>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Username'); ?></label> 
+            <input type="text" value="<?PHP echo $this->username ?>" id="username" <?PHP echo strlen($this->username)==0 ? 'disabled="disabled"' : '' ?>/>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('Password'); ?></label> 
+            <input type="password" id="password" <?PHP echo strlen($this->username)==0 ? 'disabled="disabled"' : '' ?>/>
+        </li>
+        <li>
+            <label><?PHP echo $this->translate('again Password'); ?></label> 
+            <input type="password" id="password_again" <?PHP echo strlen($this->username)==0 ? 'disabled="disabled"' : '' ?>/>
+        </li>
+        <li class="bookmark">
+            <?PHP echo $this->translate('Drag this link into your bookmarks bar. Everytime you want to subscribe an open feed, click on this bookmark.'); ?>
+            <a><?PHP echo $this->translate('subscribe feed'); ?></a>
+        </li>
+    </ul>
+</div>

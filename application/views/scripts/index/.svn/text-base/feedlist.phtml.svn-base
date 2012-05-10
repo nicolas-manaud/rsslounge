@@ -1,0 +1,24 @@
+<li><h3 class="starred <?PHP if(Zend_Registry::get('session')->selected=='starred') : ?>active<?PHP endif; ?>"><?PHP echo $this->translate('starred items'); ?> <span class="items"><?PHP echo $this->starred > 0 ? $this->starred : ''; ?></span></h3></li>
+<li>
+    <h3 id="cat_0" class="all <?PHP if(Zend_Registry::get('session')->selected=='cat_0') : ?>active<?PHP endif; ?> <?PHP if($this->unread>0) : ?>unread<?PHP endif; ?>">
+        <?PHP echo $this->translate('all items'); ?> <span class="items"><?PHP echo $this->unread; ?></span>
+    </h3>
+</li>
+
+<?PHP foreach($this->categories as $cat) : ?>
+<li>
+    <h3 id="cat_<?PHP echo $cat['id']; ?>" class="<?PHP if($cat['unread']>0) : ?>unread<?PHP endif; ?> <?PHP if('cat'.$cat['id']==Zend_Registry::get('session')->selected) : ?>active<?PHP endif; ?>">
+        <?PHP echo $cat['name']; ?> 
+        <span class="items"><?PHP echo $cat['unread']; ?></span>
+        <a title="<?PHP echo $this->translate('all feeds'); ?>" <?PHP if($cat['open']) : ?>class="up"<?PHP endif; ?>><span><?PHP echo $this->translate('all feeds'); ?></span></a>
+    </h3>
+    
+    <ul class="feeds" <?PHP if($cat['open']) : ?>style="display:block"<?PHP endif; ?>>
+        <?PHP echo $this->partialLoop('feed/feed.'.Zend_Controller_Action_HelperBroker::getStaticHelper('viewRenderer')->getViewSuffix(), $cat['feeds']) ?>
+    </ul>
+</li>
+<?PHP endforeach; ?>
+
+<li class="search">
+    <input type="text" id="search" /> <a title="<?PHP echo $this->translate('search'); ?>"><span><?PHP echo $this->translate('search'); ?></span></a>
+</li>

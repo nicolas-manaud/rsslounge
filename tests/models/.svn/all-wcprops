@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/140/trunk/tests/models
+END
+SettingsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/140/trunk/tests/models/SettingsTest.php
+END
+ItemsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/96/trunk/tests/models/ItemsTest.php
+END
+CategoriesTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/29/trunk/tests/models/CategoriesTest.php
+END
+FeedsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/81/trunk/tests/models/FeedsTest.php
+END
+MessagesTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/29/trunk/tests/models/MessagesTest.php
+END

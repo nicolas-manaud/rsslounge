@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>rsslounge aggregator</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="language" content="<?PHP echo Zend_Registry::get('session')->language ?>" />
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" media="screen, handheld, projection, tv" href="stylesheets/style.css" />
+    
+    <script type="text/javascript" src="javascript/jquery-1.5.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("input[name='username']").focus();
+        });
+    </script>
+</head>
+
+<body>
+<!-- main area -->
+<div id="login">
+    
+    <h1><span>rssLounge aggregator</span></h1>
+    
+    <h2><?PHP echo $this->translate('Login'); ?></h2>
+    
+    <form method="post" action="<?PHP echo $this->url(); ?>?login=1">
+    
+        <ul>
+            <?PHP if(isset($this->error)) : ?>
+            <li class="error"><?PHP echo $this->translate('Error: wrong username or password'); ?></li>
+            <?PHP endif; ?>
+            <?PHP if(isset($this->logout)) : ?>
+            <li class="success"><?PHP echo $this->translate('You have been logged out successfully'); ?></li>
+            <?PHP endif; ?>
+            <li><label><?PHP echo $this->translate('Username'); ?></label> <input type="text" name="username" /></li>
+            <li><label><?PHP echo $this->translate('Password'); ?></label> <input type="password" name="password" /></li>
+            <li><label>&nbsp;</label> <input type="submit" value="<?PHP echo $this->translate('login'); ?>" /></li>
+            <?PHP if(Zend_Registry::get('session')->public==1) : ?>
+            <li><label>&nbsp;</label><a href="<?PHP echo $this->url(); ?>"><?PHP echo $this->translate('show rsslounge in public mode'); ?> &raquo;</a></li>
+            <?PHP endif; ?>
+        </ul>
+    
+    </form>
+
+</div>
+
+</body>
+</html>

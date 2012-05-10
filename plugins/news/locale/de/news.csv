@@ -1,0 +1,9 @@
+#
+# language file for news plugin
+#
+
+plugins_news_heise|heise
+This feed fetches the heise news with full content (not only the header as content)|Diese Quelle liefert die aktuellen heise News mit vollem Inhalt
+
+plugins_news_zeit|zeit.de
+This feed fetches the ftd news with full content (not only the header as content)|Diese Quelle liefert die aktuellen zeit.de News mit vollem Inhalt

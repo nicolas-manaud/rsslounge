@@ -1,0 +1,16 @@
+﻿<div id="categories">
+    <h1 class="categories-edit"><?PHP echo $this->translate('edit categories'); ?></h1>
+    <ul id="categories-list">
+        <?PHP foreach($this->categories as $category): ?>
+            <li id="cat_<?PHP echo $category->id ?>">
+                <span><?PHP echo $category->id==-1 ? $this->translate($category->name) : $category->name ?></span> 
+                <a class="edit" title="<?PHP echo $this->translate('edit'); ?>"><span><?PHP echo $this->translate('edit'); ?></span></a>
+                <?PHP if($category->id!=-1) : ?>
+                <a class="delete" title="<?PHP echo $this->translate('delete'); ?>"><span><?PHP echo $this->translate('delete'); ?></span></a>
+                <?PHP endif; ?>
+                <span class="error"></span>
+            </li>
+        <?PHP endforeach; ?>
+        <li class="add" title="<?PHP echo $this->translate('add category'); ?>"><span><?PHP echo $this->translate('add category'); ?></span></li>
+    </ul>
+</div>

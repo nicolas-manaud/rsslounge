@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/140/trunk/library/Zend/Search/Lucene/Analysis/Analyzer/Common/Text
+END
+CaseInsensitive.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/140/trunk/library/Zend/Search/Lucene/Analysis/Analyzer/Common/Text/CaseInsensitive.php
+END
