@@ -79,7 +79,7 @@
 
     </div>
 
-    <div id="feeds-wrapper"  style="height:600px;">
+    <div id="feeds-wrapper">
 
 
 
@@ -153,10 +153,14 @@
             </div>
             
             
-            <div id="items" style="height:600px;">
+            <div id="items">
                 <?PHP echo $this->render("item/list." . Zend_Controller_Action_HelperBroker::getStaticHelper('viewRenderer')->getViewSuffix()); ?>
             </div>
-            
+
+						<div id="footer">
+							Rsslounge aggregator <?PHP echo $this->version ?> - <a href="http://rsslounge.aditu.de">rsslounge.aditu.de</a> - icons by <a href="http://dryicons.com/">dryicons.com</a> - updated by <a href="http://www.dotmana.com">dotmana.com</a>
+						</div>
+
         </div>
     </div>
     
@@ -164,13 +168,7 @@
     <div id="extra">
         
     </div>
-    
-    
-    <div id="footer">
-        rsslounge aggregator <?PHP echo $this->version ?><br />
-        <a href="http://rsslounge.aditu.de">http://rsslounge.aditu.de</a><br />
-        icons by <a href="http://dryicons.com/">dryicons.com</a>
-    </div>
+
 </div>
 
 <?PHP
@@ -194,7 +192,23 @@
 ?>    
 <script type="text/javascript">
     rsslounge.settings = <?PHP echo Zend_Json::encode(Zend_Registry::get('session')->getIterator()) ?>;
-    rsslounge.init('<?PHP echo $this->newfeed ?>');       
+    rsslounge.init('<?PHP echo $this->newfeed ?>');
+		$(function() {
+			function resizeFeedsWrapper()
+			{
+				$('#feeds-wrapper').height($(window).height()-90);
+			}
+			function resizeItems()
+			{
+				$('#items').height($(window).height()-130);
+			}
+			$(window).resize(function()
+			{
+				resizeFeedsWrapper();resizeItems();
+
+			});
+			resizeFeedsWrapper();resizeItems();
+		});
 </script>
 </body>
 </html>

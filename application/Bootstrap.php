@@ -14,7 +14,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
      *
      * @var string
      */
-    public $version = "1.7";
+    public $version = "1.7.dotmana-1";
     
     
     /**
