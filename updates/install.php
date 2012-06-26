@@ -64,7 +64,7 @@
         $errors['php'] = $locale->translate('you need at least php version 5.2.4');
     
     // check mod_rewrite
-    if(!isset($_GET['mod_rewrite']) || $_GET['mod_rewrite']!=1)
+    if(!in_array("mod_rewrite", apache_get_modules()))
         $errors['mod_rewrite'] = $locale->translate('the Apache Module mod_rewrite is not enabled');
     
     // check extensions

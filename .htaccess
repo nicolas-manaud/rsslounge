@@ -1,0 +1,80 @@
+# set developement mode
+SetEnv APPLICATION_ENV development
+#SetEnv APPLICATION_ENV production
+
+# show errors
+#php_flag register_globals off
+#php_flag display_errors on
+
+# set cache expire for output
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType application/javascript "access plus 2 hours"
+    ExpiresByType application/x-javascript "access plus 2 hours"
+    ExpiresByType text/javascript "access plus 2 hours"
+    ExpiresByType text/x-javascript "access plus 2 hours"
+    ExpiresByType text/css "access plus 2 hours"
+    ExpiresByType image/gif "access plus 2 hours"
+    ExpiresByType image/jpg "access plus 2 hours"
+    ExpiresByType image/png "access plus 2 hours"
+    ExpiresByType image/x-icon "access plus 2 hours"
+</IfModule>
+
+# set compression
+<IfModule mod_header.c>
+    <IfModule mod_deflate.c>
+        # Insert filter
+        SetOutputFilter DEFLATE
+
+        # Netscape 4.x has some problems...
+        BrowserMatch ^Mozilla/4 gzip-only-text/html
+
+        # Netscape 4.06-4.08 have some more problems
+        BrowserMatch ^Mozilla/4\.0[678] no-gzip
+
+        # MSIE masquerades as Netscape, but it is fine
+        # BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+
+        # NOTE: Due to a bug in mod_setenvif up to Apache 2.0.48
+        # the above regex won't work. You can use the following
+        # workaround to get the desired effect:
+        BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+
+        # Don't compress images
+        SetEnvIfNoCase Request_URI \
+        \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+
+        # Make sure proxies don't deliver the wrong content
+        Header append Vary User-Agent env=!dont-vary
+    </IfModule>
+</IfModule>
+
+# mod_rewrite rules
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    #RewriteBase /path/to/rsslounge/
+    
+    # rule for plugins
+    RewriteRule !plugins/([^/]+)/public/(.*)$ - [C]
+    RewriteRule plugins/([^/]+)/(.*)$ plugins/$1/public/$2 [L]
+    
+    # rule for favicons
+    RewriteRule !data/favicons/(.*)$ - [C]
+    RewriteRule favicons/(.*)$ data/favicons/$1 [L]
+
+    # rule for thumbnails
+    RewriteRule !data/thumbnails/(.*)$ - [C]
+    RewriteRule thumbnails/(.*)$ data/thumbnails/$1 [L]
+
+    # rule for front controller
+    RewriteCond %{QUERY_STRING} ^(.*)$
+    RewriteRule !.(js|ico|gif|jpg|png|css|asc|txt)$ index.php?mod_rewrite=1&%1
+
+    # rule for files
+    RewriteRule !favicons - [C]
+    RewriteRule !thumbnails - [C]
+    RewriteRule !public - [C]
+    RewriteRule !plugins/([^/]+)/public/(.*)$ - [C]
+    RewriteRule !index.php - [C]
+    RewriteRule (.*) public/$1 [L]
+ </IfModule>

@@ -60,7 +60,62 @@
             <li class="last"><a class="login"><?PHP echo $this->translate('Login'); ?></a></li>
         <?PHP endif; ?>
     </ul>
-    
+
+  <!-- feed navigation -->
+  <div id="feeds">
+
+    <!-- add show hide feeds -->
+    <ul id="feedsmenue">
+      <?PHP if(Zend_Registry::get('session')->authenticated===true) : ?>
+      <li><a class="add"><span><?PHP echo $this->translate('add new feed'); ?></span></a></li>
+      <?PHP endif; ?>
+      <li><a class="date <?PHP if(Zend_Registry::get('session')->dateFilter==1) echo 'active' ?>"><span><?PHP echo $this->translate('date'); ?></span></a></li>
+      <li><a class="show" title="<?PHP echo $this->translate('Show all Feeds'); ?>"><span><?PHP echo $this->translate('Show all Feeds'); ?></span></a></li>
+      <li><a class="hide" title="<?PHP echo $this->translate('Hide all Feeds'); ?>"><span><?PHP echo $this->translate('Hide all Feeds'); ?></span></a></li>
+    </ul>
+
+    <!-- calendar filter -->
+    <div id="calendar">
+
+    </div>
+
+    <div id="feeds-wrapper"  style="height:600px;">
+
+
+
+      <!-- feed list -->
+      <ul id="feeds-list">
+        <?PHP echo $this->render("index/feedlist." . Zend_Controller_Action_HelperBroker::getStaticHelper('viewRenderer')->getViewSuffix()); ?>
+      </ul>
+
+
+      <!-- search remove field -->
+      <div class="search">
+        <?PHP echo $this->translate('Search for'); ?> '<span class="search-term"></span>' <a title="<?PHP echo $this->translate('remove search'); ?>">
+        <span><?PHP echo $this->translate('remove search'); ?></span></a>
+      </div>
+
+
+      <!-- progressbar -->
+      <div id="progress">
+        <div id="progress-feed"></div>
+        <div id="progressbar"></div>
+      </div>
+
+      <!-- stats -->
+      <ul id="stats">
+        <li><?PHP echo $this->translate('all items'); ?> <span class="all"><?PHP echo $this->all; ?></span></li>
+        <li><?PHP echo $this->translate('unread items'); ?> <span class="unread"><?PHP echo $this->unread; ?></span></li>
+        <li><?PHP echo $this->translate('read items'); ?> <span class="read"><?PHP echo $this->read; ?></span></li>
+        <li><?PHP echo $this->translate('feeds'); ?> <span class="feeds"><?PHP echo $this->amountfeeds; ?></span></li>
+      </ul>
+
+
+    </div>
+
+
+
+  </div>
     
     <!-- main area -->
     <div id="wrapper">
@@ -98,57 +153,11 @@
             </div>
             
             
-            <div id="items">
+            <div id="items" style="height:600px;">
                 <?PHP echo $this->render("item/list." . Zend_Controller_Action_HelperBroker::getStaticHelper('viewRenderer')->getViewSuffix()); ?>
             </div>
             
         </div>
-    </div>
-    
-
-    <!-- feed navigation -->
-    <div id="feeds">
-    
-        <!-- add show hide feeds -->
-        <ul id="feedsmenue">
-            <?PHP if(Zend_Registry::get('session')->authenticated===true) : ?>
-            <li><a class="add"><span><?PHP echo $this->translate('add new feed'); ?></span></a></li>
-            <?PHP endif; ?>
-            <li><a class="date <?PHP if(Zend_Registry::get('session')->dateFilter==1) echo 'active' ?>"><span><?PHP echo $this->translate('date'); ?></span></a></li>
-            <li><a class="show" title="<?PHP echo $this->translate('Show all Feeds'); ?>"><span><?PHP echo $this->translate('Show all Feeds'); ?></span></a></li>
-            <li><a class="hide" title="<?PHP echo $this->translate('Hide all Feeds'); ?>"><span><?PHP echo $this->translate('Hide all Feeds'); ?></span></a></li>
-        </ul>
-
-        <!-- calendar filter -->
-        <div id="calendar">
-        
-        </div>
-
-        <!-- feed list -->
-        <ul id="feeds-list">
-            <?PHP echo $this->render("index/feedlist." . Zend_Controller_Action_HelperBroker::getStaticHelper('viewRenderer')->getViewSuffix()); ?>
-        </ul>
-        
-        <!-- search remove field -->
-        <div class="search">
-            <?PHP echo $this->translate('Search for'); ?> '<span class="search-term"></span>' <a title="<?PHP echo $this->translate('remove search'); ?>">
-            <span><?PHP echo $this->translate('remove search'); ?></span></a>
-        </div>
-        
-        
-        <!-- progressbar -->
-        <div id="progress">
-            <div id="progress-feed"></div>
-            <div id="progressbar"></div>
-        </div>
-        
-        <!-- stats -->
-        <ul id="stats">
-            <li><?PHP echo $this->translate('all items'); ?> <span class="all"><?PHP echo $this->all; ?></span></li>
-            <li><?PHP echo $this->translate('unread items'); ?> <span class="unread"><?PHP echo $this->unread; ?></span></li>
-            <li><?PHP echo $this->translate('read items'); ?> <span class="read"><?PHP echo $this->read; ?></span></li>
-            <li><?PHP echo $this->translate('feeds'); ?> <span class="feeds"><?PHP echo $this->amountfeeds; ?></span></li>
-        </ul>
     </div>
     
     

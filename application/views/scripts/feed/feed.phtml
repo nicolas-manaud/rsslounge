@@ -20,6 +20,8 @@
         <?PHP endif; ?>
     </div>
     <a class="feed"><?PHP echo $this->name; ?> <span><?PHP echo $this->unread > 0 ? '(' . $this->unread . ')' : ''; ?></span></a>
-    <span class="prio"><?PHP echo $this->priority ?></span>
+    <span class="prio">
+        <?PHP //echo $this->priority ?>
+    </span>
     <a class="edit" title="<?PHP echo $this->translate('edit'); ?>"><span><?PHP echo $this->translate('edit'); ?></span></a>
 </li>

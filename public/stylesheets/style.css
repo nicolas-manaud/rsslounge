@@ -74,19 +74,22 @@ div#header{
 }
     
 div#wrapper{
-    float:left;
-    width:100%;
+    margin-left: 250px;
 }
 
 div#content{
-    margin-left:250px;
+
 }
 
 div#feeds{
     float:left;
     width:250px;
-    margin-left:-100%;
+
 }
+#feeds-wrapper{
+    overflow-y: auto;
+}
+
 
 div#extra {
     clear:left;
@@ -604,7 +607,8 @@ div#header {
                 }
                 
                 #feeds-list ul li .prio  {
-                    position:absolute;
+                    display: none;
+                    /*position:absolute;*/
                     left:228px;
                     margin-top:-13px;
                     color:#999;
@@ -618,7 +622,7 @@ div#header {
                     height:16px;
                     width:16px;
                     background:url(images/icons.png) -10px -240px no-repeat;
-                    left:215px;
+                    left:205px;
                     margin-top:-15px;
                 }
                 
@@ -641,7 +645,7 @@ div#header {
         }
             
             #feeds-list .search  input {
-                width:190px;
+                width:170px;
             }
             
             #feeds-list .search  a {
@@ -651,8 +655,7 @@ div#header {
                 background:url(images/icons.png) -10px -456px no-repeat;
                 position:absolute;
                 top:6px;
-                left:100%;
-                margin-left:-40px;
+                margin-left:140px;
             }
             
             #feeds-list .search  a span {
@@ -665,6 +668,7 @@ div#header {
         color:#999999;
         font-size:11px;
         margin-top:5px;
+        margin-right: 5px;
     }
     
         #stats span {
@@ -812,7 +816,9 @@ div.search a {
 /* ============ Items ============ */
 
 #items {
-    clear:both;
+    overflow-x: visible;
+    overflow-y: auto;
+    position: relative;
     z-index:50;
 }
 

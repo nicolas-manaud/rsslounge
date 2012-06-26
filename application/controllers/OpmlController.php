@@ -73,7 +73,7 @@ class OpmlController extends Zend_Controller_Action {
     public function importAction() {
     
         // parse given opml file
-        $xml = @simplexml_load_string(file_get_contents($_FILES['userfile']['tmp_name']));
+        $xml = simplexml_load_string(file_get_contents($_FILES['userfile']['tmp_name']));
         if(!$xml) {
             echo Zend_Json::encode( array(
                 'error' => Zend_Registry::get('language')->translate('opml file parse error')
