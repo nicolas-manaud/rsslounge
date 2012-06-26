@@ -4,8 +4,9 @@ README.txt
 demos/
 extras/documentation
 config/config.ini
-data/cache/*
+#data/cache/*
 data/favicons/*
 data/logs/*
+!data/logs
 data/thumbnails/*
 .idea
