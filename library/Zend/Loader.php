@@ -195,6 +195,15 @@ class Zend_Loader
                 continue;
             }
             $file = $path . '/' . $filename;
+						if (strpos($file, '/usr/share/php/')!==false)
+						{
+							$file = substr($file, strlen('/usr/share/php/'));
+						}
+						if (strpos($file, '/usr/share/pear/')!==false)
+						{
+							$file = substr($file, strlen('/usr/share/pear/'));
+						}
+
             if (is_readable($file)) {
                 return true;
             }
