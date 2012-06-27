@@ -748,11 +748,13 @@ div.search a {
     #filter #actions {
         margin-left:10px;
     }
-    
+
+    /*
     body.small #filter #actions {
         margin-top:-53px;
         margin-left:15px;
     }
+    */
     
     #filter #actions, 
     #filter #actions li, 

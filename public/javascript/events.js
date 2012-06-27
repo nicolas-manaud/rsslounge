@@ -21,13 +21,24 @@ rsslounge.events = {
         rsslounge.events.images();
         rsslounge.events.messages();
     },
-    
-    
+
+
+    selectFeedMobile: function () {
+        rsslounge.settings.selected = $('#menu_mobile').find('option:selected').attr('id');
+        rsslounge.settings.starred = 0;
+        rsslounge.refreshList();
+    },
+
     /**
      * initialize the events of the feedlist
      */
     feedlist: function() {
        
+        // menu mobile
+        $('#menu_mobile').unbind('change').change(function () {
+            rsslounge.events.selectFeedMobile();
+        });
+
         //
         // submenue top
         //
@@ -155,13 +166,12 @@ rsslounge.events = {
             rsslounge.saveOpenCategories();
         });
         
-        
-        
+
         
         //
         // feeds
         //
-        
+
         var selectFeedEvent = function () {
             // prevent click after dragdrop
             if(rsslounge.dragged) {

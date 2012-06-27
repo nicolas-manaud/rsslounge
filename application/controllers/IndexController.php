@@ -36,6 +36,10 @@ class IndexController extends Zend_Controller_Action {
      * @return void
      */
     public function indexAction() {
+
+				// include DetectMobile lib
+				require_once(Zend_Registry::get('config')->includePaths->library . '/rsslounge/DetectMobile.php');
+
         // prepare icon cache
         Zend_Controller_Action_HelperBroker::getStaticHelper('icon')->generateIconImage();
     

@@ -62,7 +62,9 @@
     </ul>
 
   <!-- feed navigation -->
-  <div id="feeds">
+  <div id="feeds"
+		<?php if (DetectMobile::isMobile()) echo 'style="width:100%;"'; ?>
+		>
 
     <!-- add show hide feeds -->
     <ul id="feedsmenue">
@@ -89,28 +91,28 @@
         <?PHP echo $this->render("index/feedlist." . Zend_Controller_Action_HelperBroker::getStaticHelper('viewRenderer')->getViewSuffix()); ?>
       </ul>
 
+			<?php if (!DetectMobile::isMobile()) : ?>
+				<!-- search remove field -->
+				<div class="search">
+					<?PHP echo $this->translate('Search for'); ?> '<span class="search-term"></span>' <a title="<?PHP echo $this->translate('remove search'); ?>">
+					<span><?PHP echo $this->translate('remove search'); ?></span></a>
+				</div>
 
-      <!-- search remove field -->
-      <div class="search">
-        <?PHP echo $this->translate('Search for'); ?> '<span class="search-term"></span>' <a title="<?PHP echo $this->translate('remove search'); ?>">
-        <span><?PHP echo $this->translate('remove search'); ?></span></a>
-      </div>
 
+				<!-- progressbar -->
+				<div id="progress">
+					<div id="progress-feed"></div>
+					<div id="progressbar"></div>
+				</div>
 
-      <!-- progressbar -->
-      <div id="progress">
-        <div id="progress-feed"></div>
-        <div id="progressbar"></div>
-      </div>
-
-      <!-- stats -->
-      <ul id="stats">
-        <li><?PHP echo $this->translate('all items'); ?> <span class="all"><?PHP echo $this->all; ?></span></li>
-        <li><?PHP echo $this->translate('unread items'); ?> <span class="unread"><?PHP echo $this->unread; ?></span></li>
-        <li><?PHP echo $this->translate('read items'); ?> <span class="read"><?PHP echo $this->read; ?></span></li>
-        <li><?PHP echo $this->translate('feeds'); ?> <span class="feeds"><?PHP echo $this->amountfeeds; ?></span></li>
-      </ul>
-
+				<!-- stats -->
+				<ul id="stats">
+					<li><?PHP echo $this->translate('all items'); ?> <span class="all"><?PHP echo $this->all; ?></span></li>
+					<li><?PHP echo $this->translate('unread items'); ?> <span class="unread"><?PHP echo $this->unread; ?></span></li>
+					<li><?PHP echo $this->translate('read items'); ?> <span class="read"><?PHP echo $this->read; ?></span></li>
+					<li><?PHP echo $this->translate('feeds'); ?> <span class="feeds"><?PHP echo $this->amountfeeds; ?></span></li>
+				</ul>
+			<?php endif; ?>
 
     </div>
 
@@ -119,11 +121,15 @@
   </div>
     
     <!-- main area -->
-    <div id="wrapper">
+    <div id="wrapper"
+			<?php if (DetectMobile::isMobile()) echo 'style="margin-left:0;"'; ?>
+			>
         <div id="content">
             
             <!-- top filter settings -->
-            <div id="filter">
+            <div id="filter"
+							<?php if (DetectMobile::isMobile()) echo 'style="width:100%; clear: both;"'; ?>
+							>
             
                 <?PHP if(Zend_Registry::get('session')->authenticated===true) : ?>
                 <ul id="actions">
@@ -199,16 +205,17 @@
 			{
 				$('#feeds-wrapper').height($(window).height()-90);
 			}
-			function resizeItems()
-			{
-				$('#items').height($(window).height()-130);
-			}
-			$(window).resize(function()
-			{
+			<?php if (!DetectMobile::isMobile()): ?>
+				function resizeItems()
+				{
+					$('#items').height($(window).height()-130);
+				}
+				$(window).resize(function()
+				{
+					resizeFeedsWrapper();resizeItems();
+				});
 				resizeFeedsWrapper();resizeItems();
-
-			});
-			resizeFeedsWrapper();resizeItems();
+			<?php endif; ?>
 		});
 </script>
 </body>
