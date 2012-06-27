@@ -1,4 +1,4 @@
-<?php if (!DetectMobile::isMobile()): ?>
+<?php if (DetectMobile::isMobile()): ?>
 	<select id="menu_mobile" name="menu_mobile">
 		<?php foreach($this->categories as $cat) : ?>
 			<optgroup id="cat_<?PHP echo $cat['id']; ?>" label="<?PHP echo $cat['name']; ?>">
