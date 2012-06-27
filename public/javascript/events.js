@@ -72,6 +72,17 @@ rsslounge.events = {
             rsslounge.saveOpenCategories();
             
         });
+
+        // hide feeds with no unread items
+        $('#feedsmenue .unread').unbind('click').click(function() {
+
+            $("#feeds-list ul li.message").each(function(i, feed) {
+                if (!$(feed).hasClass('unread'))
+                {
+                    $(feed).hide();
+                }
+            });
+        });
         
         
         //

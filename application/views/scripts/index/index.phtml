@@ -67,9 +67,10 @@
     <!-- add show hide feeds -->
     <ul id="feedsmenue">
       <?PHP if(Zend_Registry::get('session')->authenticated===true) : ?>
-      <li><a class="add"><span><?PHP echo $this->translate('add new feed'); ?></span></a></li>
+      	<li><a class="add"><span><?PHP echo $this->translate('add new feed'); ?></span></a></li>
       <?PHP endif; ?>
-      <li><a class="date <?PHP if(Zend_Registry::get('session')->dateFilter==1) echo 'active' ?>"><span><?PHP echo $this->translate('date'); ?></span></a></li>
+			<li><a class="unread" title="<?PHP echo $this->translate('only unread'); ?>"><span></span></a></li>
+			<li><a class="date <?PHP if(Zend_Registry::get('session')->dateFilter==1) echo 'active' ?>"><span><?PHP echo $this->translate('date'); ?></span></a></li>
       <li><a class="show" title="<?PHP echo $this->translate('Show all Feeds'); ?>"><span><?PHP echo $this->translate('Show all Feeds'); ?></span></a></li>
       <li><a class="hide" title="<?PHP echo $this->translate('Hide all Feeds'); ?>"><span><?PHP echo $this->translate('Hide all Feeds'); ?></span></a></li>
     </ul>

@@ -396,6 +396,7 @@ div#header {
 }
 
     #feedsmenue .date,
+    #feedsmenue .unread,
     #feedsmenue .show,
     #feedsmenue .hide {
         position:absolute;
@@ -418,7 +419,7 @@ div#header {
         display:block;
         border:2px solid #cccccc;
         border-bottom:0;
-        width:130px;
+        width:120px;
         margin-left:20px;
         background:url(images/icons.png) 1px -119px no-repeat;
         padding:2px;
@@ -459,6 +460,11 @@ div#header {
     #feedsmenue .hide {
         margin-left:-16px;
         background:url(images/icons.png) -7px -7px no-repeat;
+    }
+
+    #feedsmenue .unread{
+        margin-left:-63px;
+        background:url(images/icons.png) -10px -335px no-repeat;
     }
 
 
