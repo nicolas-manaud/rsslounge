@@ -44,6 +44,10 @@
             <label><?PHP echo $this->translate('Save open Categories'); ?></label> 
             <input type="checkbox" value='1' id="saveOpenCategories" <?PHP echo Zend_Registry::get('session')->saveOpenCategories==1 ? 'checked="checked"' : '' ?>/>
         </li>
+				<li>
+					<label><?PHP echo $this->translate('Hide feeds with no unread items'); ?></label>
+					<input type="checkbox" value='1' id="hideFeedsNoUnreadItems" <?PHP echo Zend_Registry::get('session')->hideFeedsNoUnreadItems==1 ? 'checked="checked"' : '' ?>/>
+				</li>
         <li>
             <label><?PHP echo $this->translate('First show unread Items'); ?></label> 
             <input type="checkbox" value='1' id="firstUnread" <?PHP echo Zend_Registry::get('session')->firstUnread==1 ? 'checked="checked"' : '' ?>/>

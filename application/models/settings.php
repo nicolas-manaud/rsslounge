@@ -120,6 +120,7 @@ class application_models_settings extends application_models_base {
             'currentPriorityStart'  =>    $filterTrim,
             'currentPriorityEnd'    =>    $filterTrim,
             'saveOpenCategories'    =>    $filterTrim,
+						'hideFeedsNoUnreadItems'    =>    $filterTrim,
             'openCategories'        =>    $filterTrim,
             'firstUnread'           =>    $filterTrim,
             'newWindow'             =>    $filterTrim,
@@ -232,6 +233,10 @@ class application_models_settings extends application_models_base {
                                         $validatorNum,
                                         Zend_Filter_Input::PRESENCE => Zend_Filter_Input::PRESENCE_OPTIONAL
                                         ),
+						'hideFeedsNoUnreadItems'=> array(
+																				$validatorNum,
+																				Zend_Filter_Input::PRESENCE => Zend_Filter_Input::PRESENCE_OPTIONAL
+																				),
             'openCategories'        => array(
                                         Zend_Filter_Input::ALLOW_EMPTY => true,
                                         Zend_Filter_Input::PRESENCE => Zend_Filter_Input::PRESENCE_OPTIONAL
