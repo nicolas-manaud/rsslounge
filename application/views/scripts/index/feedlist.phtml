@@ -19,7 +19,6 @@
 
 
 	<?PHP foreach($this->categories as $cat) : ?>
-	<?php var_dump(count($cat['feeds'])); ?>
 	<li>
 			<h3 id="cat_<?PHP echo $cat['id']; ?>" class="<?PHP if($cat['unread']>0) : ?>unread<?PHP endif; ?> <?PHP if('cat'.$cat['id']==Zend_Registry::get('session')->selected) : ?>active<?PHP endif; ?>">
 					<?PHP echo $cat['name']; ?>
