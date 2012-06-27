@@ -1,6 +1,8 @@
-<?php if(Zend_Registry::get('session')->hideFeedsNoUnreadItems==0 || $this->unread>0): ?>
+<?php if($this->unread > 0): ?>
 
-	<option id="feed_<?PHP echo $this->id ?>">
+	<option id="feed_<?PHP echo $this->id ?>"
+		<?PHP if('feed_'.$this->id==Zend_Registry::get('session')->selected) : ?> selected="selected"<?PHP endif; ?>
+		>
 		<?PHP echo $this->name; ?> <?PHP echo $this->unread > 0 ? '(' . $this->unread . ')' : ''; ?>
 	</option>
 
